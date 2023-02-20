@@ -1,12 +1,12 @@
 "use client";
 import Image from "next/image";
-import { Michroma } from "@next/font/google";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { Michroma } from "@next/font/google";
+import { useState } from "react";
 import useSWR from "swr";
 import { BiChevronDown, BiChevronUp } from "react-icons/bi";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoClose } from "react-icons/io5";
+import { CgMenuLeftAlt } from "react-icons/cg";
+import { AiOutlineClose } from "react-icons/ai";
 
 const michrome = Michroma({
   subsets: ["latin"],
@@ -26,10 +26,10 @@ export default function Navbar() {
   // Fetching course data on client side
   const { data, error } = useSWR("/api/courseData", fetcher);
   if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading...</div>;
+  // if (!data) return <div>Loading...</div>;
 
   return (
-    <nav className="md:flex justify-between bg-neutral-200/75 md:px-10 md:py-2 items-center h-12">
+    <nav className="md:flex justify-between bg-transparent md:px-10 md:py-2 items-center h-12">
       <div className="flex flex-row-reverse justify-between px-4 md:flex-none md:px-0">
         <div className="flex  w-fit mt-2 md:mt-0 md:items-center space-x-3 z-20">
           <Link href="/">
@@ -38,7 +38,7 @@ export default function Navbar() {
             </div>
           </Link>
           <div
-            className={`${michrome.variable} font-serif font-extrabold text-2xl text-teal-800`}
+            className={`${michrome.variable} font-serif font-extrabold text-2xl text-teal-700`}
           >
             PIAIC
           </div>
@@ -49,9 +49,12 @@ export default function Navbar() {
           onClick={() => setMenuOpen((prev: boolean) => !prev)}
         >
           {menuOpen ? (
-            <GiHamburgerMenu size="30" className="cursor-pointer" />
+            <CgMenuLeftAlt size="30" className="cursor-pointer text-teal-700" />
           ) : (
-            <IoClose size="30" className="cursor-pointer" />
+            <AiOutlineClose
+              size="30"
+              className="cursor-pointer text-teal-700"
+            />
           )}
         </div>
       </div>
