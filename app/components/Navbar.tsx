@@ -29,7 +29,7 @@ export default function Navbar() {
   // if (!data) return <div>Loading...</div>;
 
   return (
-    <nav className="md:flex justify-between bg-transparent md:px-10 md:py-2 items-center h-12">
+    <nav className="md:flex justify-between bg-neutral-200/75 md:px-10 md:py-2 items-center h-12">
       <div className="flex flex-row-reverse justify-between px-4 md:flex-none md:px-0">
         <div className="flex  w-fit mt-2 md:mt-0 md:items-center space-x-3 z-20">
           <Link href="/">
