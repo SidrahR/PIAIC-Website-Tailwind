@@ -2,25 +2,23 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="hidden">
-      HERO SECTION
-      {/* <div
-        id="hero_img"
-        // className="h-screen w-full bg-cover relative -z-10 -mt-14"
-        className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
+    <div>
+      <div
+        id="bg_image"
+        className="w-full h-screen relative bg-gradient-to-b from-gray-600 to-stone-600"
       >
-        <Image alt="hero" src="/hero1.jpg" fill></Image>
+        <Image
+          src="/hero3_edit.jpg"
+          alt="hero_image"
+          fill
+          className="object-cover mix-blend-overlay"
+        />
+        <div className="">
+          <h1 className="p-40 w-2/4 text-center text-amber-100 text-3xl md:text-5xl">
+            Presidents Initiative for Artificial Intelligence and Computing
+          </h1>
+        </div>
       </div>
-
-      <div className="absolute inset-0 bg-black opacity-25"></div>
-      <div className="container mx-auto px-6 z-10">
-        <h1 className="text-4xl font-bold text-white leading-tight sm:text-5xl">
-          Your Hero Section Heading Here
-        </h1>
-        <p className="text-2xl text-gray-300 mt-8">
-          Your Hero Section Subheading Here
-        </p>
-      </div> */}
     </div>
   );
 }
