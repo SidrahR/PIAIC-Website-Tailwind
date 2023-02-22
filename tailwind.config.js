@@ -8,7 +8,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["var(--font-michrome)"],
+        michroma: ["var(--font-michroma)"],
+        lato: ["var(--font-lato)"],
+        yrsa: ["var(--font-yrsa)"],
+        ubuntu: ["var(--font-ubuntu)"],
       },
     },
   },

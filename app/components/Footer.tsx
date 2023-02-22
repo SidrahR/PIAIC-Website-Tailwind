@@ -26,7 +26,7 @@ export default function Footer() {
               </div>
             </Link>
             <div
-              className={`${michrome.variable} font-serif font-extrabold text-2xl text-teal-700`}
+              className={`${michrome.variable} font-michroma font-extrabold text-2xl text-teal-700`}
             >
               PIAIC
             </div>
