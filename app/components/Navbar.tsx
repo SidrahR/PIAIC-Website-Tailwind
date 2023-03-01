@@ -44,16 +44,16 @@ export default function Navbar() {
   // if (!data) return <div>Loading...</div>;
 
   return (
-    <motion.nav
-      initial={{ opacity: 0, y: -5 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3 }}
-      className="absolute md:flex justify-between w-full bg-transparent md:px-10 md:py-2 items-center h-12 z-20"
+    <nav
+      // initial={{ opacity: 0, y: -5 }}
+      // animate={{ opacity: 1, y: 0 }}
+      // transition={{ duration: 0.3 }}
+      className="absolute md:flex justify-between w-full bg-transparent md:px-16 md:py-2 items-center h-12 z-20 max-w-screen-2xl left-0 right-0 m-auto"
     >
       <div className="flex flex-row-reverse justify-between px-4 md:flex-none md:px-0">
         <div className="flex flex-row-reverse md:flex-row mt-2 md:mt-0 items-center space-x-3 z-20">
           <Link href="/">
-            <div className="z-50 pl-3 md:pl-0 md:mt-9 ">
+            <div className="z-50 pl-3 md:pl-0 md:mt-10 ">
               <Image src="/piaic.svg" alt="logo" width="50" height="50"></Image>
             </div>
           </Link>
@@ -156,6 +156,6 @@ export default function Navbar() {
           </Link>
         </li>
       </ul>
-    </motion.nav>
+    </nav>
   );
 }
