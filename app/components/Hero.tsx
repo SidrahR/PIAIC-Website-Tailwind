@@ -27,7 +27,7 @@ export default function Hero() {
     <div className="max-w-screen-2xl mx-auto">
       <div
         id="bg_image"
-        className="w-full h-1/2 md:h-screen relative  bg-gradient-to-b from-gray-600 to-stone-600"
+        className="w-full h-1/2 md:h-screen relative bg-gradient-to-b from-gray-600 to-stone-600"
       >
         <Image
           src="/hero.jpg"
@@ -43,6 +43,7 @@ export default function Hero() {
             className={`w-fit md:w-2/4 text-slate-100 text-3xl md:text-6xl font-extrabold ${ubuntu.variable} font-ubuntu leading-tight mt-20`}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2 }}
           >
             Presidential Initiative
             <div className="text-lg md:text-2xl">
@@ -53,12 +54,13 @@ export default function Hero() {
           <motion.hr
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 2 }}
             className="h-2 w-2/4 mt-4 bg-slate-100"
           />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.5, duration: 2 }}
             className={`w-fit md:w-2/4 py-10 text-slate-100 text-xs md:text-lg font-lato ${lato.variable}`}
           >
             The mission of PIAIC is to reshape Pakistan by revolutionizing
