@@ -11,7 +11,8 @@ const michrome = Michroma({
 
 export default function Footer() {
   return (
-    <div className="flex flex-col min-h-screen max-w-screen-2xl  mx-auto">
+    // min-h-screen - to stay at bottom with less content
+    <div className="flex flex-col max-w-screen-2xl  mx-auto">
       <footer className="bg-neutral-200/75 p-5 items-center flex flex-col md:flex-row mt-auto md:justify-evenly gap-6 md:px-16  ">
         <div id="logo_social" className="pt-2">
           <div className="flex items-center space-x-2">
