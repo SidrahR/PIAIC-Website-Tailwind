@@ -27,7 +27,7 @@ export default function Hero() {
     <div className="max-w-screen-2xl mx-auto">
       <div
         id="bg_image"
-        className="w-full h-1/2 lg:h-screen relative bg-gradient-to-b from-gray-600 to-stone-600"
+        className="w-full h-1/2 lg:h-screen relative bg-gray-600"
       >
         <Image
           src="/hero.jpg"
@@ -40,13 +40,13 @@ export default function Hero() {
           className="w-full h-3/4 md:h-screen flex flex-col justify-center items-start px-20 "
         >
           <motion.h1
-            className={`w-fit md:w-2/4 text-slate-100 text-3xl md:text-5xl font-extrabold ${ubuntu.variable} font-ubuntu leading-tight mt-20`}
+            className={`w-fit md:w-2/4 text-slate-100 text-3xl md:text-6xl font-extrabold ${ubuntu.variable} font-ubuntu leading-tight mt-20`}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
             Presidential Initiative
-            <div className="text-lg md:text-xl">
+            <div className="text-lg md:text-2xl">
               for Artificial Intelligence and Computing (PIAIC)
             </div>
           </motion.h1>

@@ -13,13 +13,12 @@ export default function Card({
 }) {
   return (
     <div>
-      <div className="w-full h-full object-contain absolute bg-neutral-500 rounded-2xl">
+      <div className="w-full h-full object-contain absolute drop-shadow-2xl bg-neutral-500 rounded-xl overflow-hidden">
         <Image
           src={imageSrc}
           alt={altText}
           fill
-          style={{ borderRadius: 15, boxShadow: "-2px 2px 20px gray" }}
-          className="mix-blend-overlay "
+          className="mix-blend-overlay hover:mix-blend-normal hover:scale-110 hover:transition-all "
         />
       </div>
       <div
