@@ -1,9 +1,9 @@
-import Cards from "./components/Cards";
+import Cards from "./components/Courses";
 import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <div className=" bg-slate-300 ">
+    <div>
       <Hero />
       <Cards />
       {/* <Faculty/> */}

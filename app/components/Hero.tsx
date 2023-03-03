@@ -43,7 +43,7 @@ export default function Hero() {
             className={`w-fit md:w-2/4 text-slate-100 text-3xl md:text-5xl font-extrabold ${ubuntu.variable} font-ubuntu leading-tight mt-20`}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
           >
             Presidential Initiative
             <div className="text-lg md:text-xl">
@@ -54,13 +54,13 @@ export default function Hero() {
           <motion.hr
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 1 }}
             className="h-2 w-full md:w-2/4 mt-4 bg-slate-100"
           />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 2 }}
+            transition={{ delay: 0.5, duration: 1 }}
             className={`w-fit md:w-2/4 py-5 md:py-10 text-slate-100 text-xs md:text-base font-lato ${lato.variable}`}
           >
             The mission of PIAIC is to reshape Pakistan by revolutionizing
@@ -73,7 +73,7 @@ export default function Hero() {
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 2 }}
+            transition={{ delay: 0.5, duration: 1 }}
             className={`bg-slate-100 text-slate-600 py-3 px-8 rounded-lg text-sm font-semibold hover:cursor-pointer z-50 hover:bg-slate-200 font-lato ${lato.variable}`}
           >
             Apply
