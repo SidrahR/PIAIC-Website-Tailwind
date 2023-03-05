@@ -21,7 +21,7 @@ export default function Faculty() {
       >
         Learn from the Best : Our Faculty Team
       </h2>
-      <div className="flex justify-around space-x-10  mb-10">
+      <div className="flex justify-around space-x-10 pb-10">
         <FacultyCard
           teacherName="Zia Khan"
           info="Web 3, DeFi, Cloud and Metaverse Architect | Tokenomist and

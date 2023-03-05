@@ -84,7 +84,7 @@ export default function Navbar() {
       </div>
 
       <ul
-        className={` w-screen md:mt-8 md:w-auto md:static md:flex md:space-x-14 md:items-center transition-all duration-200 ease-in-out md:transition-none text-slate-200
+        className={` w-screen md:mt-8 md:w-auto md:static md:flex md:space-x-7 lg:space-x-14 md:items-center transition-all duration-200 ease-in-out md:transition-none text-slate-200
         ${lato.variable} font-lato 
         ${
           menuOpen

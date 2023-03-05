@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Card({
   courseName,
@@ -13,14 +14,19 @@ export default function Card({
 }) {
   return (
     <div>
-      <div className="w-full h-full object-contain absolute drop-shadow-2xl bg-neutral-500 rounded-xl overflow-hidden">
+      <motion.div
+        whileHover={{ scale: 1.2 }}
+        transition={{ duration: 0.5 }}
+        className="w-full h-full object-contain absolute drop-shadow-2xl bg-neutral-500"
+      >
         <Image
           src={imageSrc}
           alt={altText}
           fill
-          className="mix-blend-overlay hover:mix-blend-normal hover:scale-110 hover:transition-all "
+          className="mix-blend-overlay hover:mix-blend-normal"
         />
-      </div>
+      </motion.div>
+
       <div
         className={`text-xl top-[83%] ${textAlignment} text-white absolute bg-opacity-50 bg-slate-800 p-2 rounded-2xl`}
       >

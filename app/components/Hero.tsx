@@ -27,7 +27,7 @@ export default function Hero() {
     <div className="max-w-screen-2xl mx-auto">
       <div
         id="bg_image"
-        className="w-full h-1/2 lg:h-screen relative bg-gray-600"
+        className="w-full h-1/2 pb-10 md:pt-10 lg:pt-0 lg:pb-0 lg:h-screen relative bg-gray-600"
       >
         <Image
           src="/hero.jpg"
@@ -37,16 +37,16 @@ export default function Hero() {
         />
         <div
           id="hero_text"
-          className="w-full h-3/4 md:h-screen flex flex-col justify-center items-start px-20 "
+          className="w-full h-3/4 lg:h-screen flex flex-col justify-center items-start px-10 md:px-20 "
         >
           <motion.h1
-            className={`w-fit md:w-2/4 text-slate-100 text-3xl md:text-6xl font-extrabold ${ubuntu.variable} font-ubuntu leading-tight mt-20`}
+            className={`w-fit lg:w-2/4 text-slate-100 text-3xl md:text-4xl lg:text-6xl font-extrabold ${ubuntu.variable} font-ubuntu leading-tight mt-20`}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
             Presidential Initiative
-            <div className="text-lg md:text-2xl">
+            <div className="text-lg lg:text-2xl">
               for Artificial Intelligence and Computing (PIAIC)
             </div>
           </motion.h1>
@@ -55,13 +55,13 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="h-2 w-full md:w-2/4 mt-4 bg-slate-100"
+            className="h-2 w-full md:w-2/3 lg:w-2/4 mt-4 bg-slate-100"
           />
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className={`w-fit md:w-2/4 py-5 md:py-10 text-slate-100 text-xs md:text-base font-lato ${lato.variable}`}
+            className={`w-fit lg:w-2/4 py-5 lg:py-10 text-slate-100 text-xs md:text-base font-lato ${lato.variable}`}
           >
             The mission of PIAIC is to reshape Pakistan by revolutionizing
             education, research, and business by adopting latest, cutting-edge
@@ -74,7 +74,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className={`bg-slate-100 text-slate-600 py-3 px-8 rounded-lg text-sm font-semibold hover:cursor-pointer z-50 hover:bg-slate-200 font-lato ${lato.variable}`}
+            className={`bg-slate-100 text-slate-600 py-3 px-8 rounded-lg text-sm font-semibold hover:cursor-pointer z-10 hover:bg-slate-200 font-lato ${lato.variable}`}
           >
             Apply
           </motion.button>
