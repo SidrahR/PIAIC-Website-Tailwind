@@ -26,9 +26,9 @@ export default function FacultyCard({
   info: string;
 }) {
   return (
-    <div className="w-1/3 group ">
-      <div className=" bg-neutral-200 group-hover:bg-neutral-50 transition-all ease-in-out duration-500">
-        <div className="w-full h-56 object-center overflow-hidden drop-shadow-2xl">
+    <div className="w-full lg:w-1/3 group pb-10">
+      <div className="h-full bg-neutral-200 group-hover:bg-neutral-50 transition-all ease-in-out duration-500">
+        <div className="w-full h-56 md:h-96 lg:h-56 object-center overflow-hidden drop-shadow-2xl">
           <Image
             src={imageSrc}
             alt={altText}
@@ -42,7 +42,9 @@ export default function FacultyCard({
           >
             {teacherName}
           </h2>
-          <p className={`font-lato ${lato.variable}`}>{info}</p>
+          <p className={`md:text-lg lg:text-base font-lato ${lato.variable}`}>
+            {info}
+          </p>
         </div>
       </div>
     </div>

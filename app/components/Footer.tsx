@@ -13,7 +13,8 @@ export default function Footer() {
   return (
     // min-h-screen - to stay at bottom with less content
     <div className="flex flex-col max-w-screen-2xl mx-auto">
-      <footer className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 p-5 items-center flex flex-col md:flex-row mt-auto md:justify-evenly gap-6 md:px-16  ">
+      {/* bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 */}
+      <footer className="bg-black p-5 items-center flex flex-col md:flex-row mt-auto md:justify-evenly gap-6 md:px-16  ">
         <div id="logo_social" className="pt-2">
           <div className="flex items-center space-x-2">
             <Link href="/">
@@ -60,10 +61,10 @@ export default function Footer() {
 
         <div
           id="about_cities"
-          className="flex space-x-8 md:grow justify-evenly"
+          className="flex space-x-20 md:space-x-8 md:grow justify-evenly"
         >
           <div>
-            <div className="font-bold text-lg text-slate-200">About Us</div>
+            <div className="font-bold text-lg text-blue-200">About Us</div>
             <ul className="text-sm mt-2 text-slate-300">
               <li>
                 <Link href="/">Home</Link>
@@ -81,7 +82,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <div className="font-bold text-lg text-slate-200">Locations</div>
+            <div className="font-bold text-lg text-blue-200">Locations</div>
             <ul className="text-sm mt-2 text-slate-300">
               <li>Karachi</li>
               <li>Islamabad</li>
@@ -93,20 +94,20 @@ export default function Footer() {
 
         <div
           id="partners"
-          className="font-bold text-lg text-slate-200 space-x-5 pt-5 md:pt-0 text-center"
+          className="font-bold text-lg text-blue-200 space-x-5 pt-5 md:pt-0 text-center"
         >
           Strategic Partners
-          <div className="flex pt-2 md:flex-col md:space-y-2 md:items-center">
+          <div className="flex pt-2 md:flex-col space-x-6 md:space-x-0 md:space-y-2 md:items-center">
             <Link
               href="https://www.linkedin.com/company/panacloud-pvt-ltd/"
               target="_blank"
             >
               <div className="">
                 <Image
-                  src="/panacloud.svg"
+                  src="/pana.png"
                   alt="logo"
-                  width="100"
-                  height="100"
+                  width="70"
+                  height="70"
                 ></Image>
               </div>
             </Link>

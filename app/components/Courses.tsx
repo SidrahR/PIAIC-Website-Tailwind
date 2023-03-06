@@ -13,7 +13,7 @@ const ubuntu = Ubuntu({
 export default function Cards() {
   return (
     <div
-      className={`max-w-screen-2xl mx-auto py-10 px-10 font-ubuntu ${ubuntu.variable}`}
+      className={`max-w-screen-2xl mx-auto py-10 px-5 md:px-10 font-ubuntu ${ubuntu.variable}`}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden">
         <motion.div
@@ -141,7 +141,7 @@ export default function Cards() {
               className="mix-blend-overlay hover:mix-blend-normal"
             />
           </motion.div>
-          <div className="mt-3 relative w-fit right-20 md:right-36 text-xl text-white z-10 bg-opacity-50 bg-slate-800 p-2 rounded-2xl ">
+          <div className="mt-3 relative w-fit right-16 md:right-36 text-xl text-white z-10 bg-opacity-50 bg-slate-800 p-2 rounded-2xl ">
             Generative AI
             <div className="text-base text-center">Coming Soon</div>
           </div>

@@ -37,7 +37,7 @@ export default function Hero() {
         />
         <div
           id="hero_text"
-          className="w-full h-3/4 lg:h-screen flex flex-col justify-center items-start px-10 md:px-20 "
+          className="w-full h-3/4 lg:h-screen flex flex-col justify-center items-start px-5 md:px-20 "
         >
           <motion.h1
             className={`w-fit lg:w-2/4 text-slate-100 text-3xl md:text-4xl lg:text-6xl font-extrabold ${ubuntu.variable} font-ubuntu leading-tight mt-20`}
