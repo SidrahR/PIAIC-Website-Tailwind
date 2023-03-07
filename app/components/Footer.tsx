@@ -17,7 +17,9 @@ export default function Footer() {
       <footer className="bg-black p-5 items-center flex flex-col md:flex-row mt-auto md:justify-evenly gap-6 md:px-16  ">
         <div id="logo_social" className="pt-2">
           <div className="flex items-center space-x-2">
-            <Link href="#">
+            <div
+            //  href="#"
+            >
               <div className="">
                 <Image
                   src="/piaic.svg"
@@ -26,7 +28,7 @@ export default function Footer() {
                   height="50"
                 ></Image>
               </div>
-            </Link>
+            </div>
             <div
               className={`${michrome.variable} font-michroma font-extrabold text-2xl text-amber-50`}
             >
@@ -66,18 +68,10 @@ export default function Footer() {
           <div>
             <div className="font-bold text-lg text-blue-200">About Us</div>
             <ul className="text-sm mt-2 text-slate-300">
-              <li>
-                <Link href="#">Home</Link>
-              </li>
-              <li>
-                <Link href="#">Apply</Link>
-              </li>
-              <li>
-                <Link href="#">How it works</Link>
-              </li>
-              <li>
-                <Link href="#">Contact Us</Link>
-              </li>
+              <li className="cursor-pointer">Home </li>
+              <li className="cursor-pointer">Apply</li>
+              <li className="cursor-pointer">How it works</li>
+              <li className="cursor-pointer">Contact Us</li>
             </ul>
           </div>
 
@@ -111,7 +105,7 @@ export default function Footer() {
                 ></Image>
               </div>
             </Link>
-            <Link href="https://www.saylaniwelfare.com/en">
+            <Link href="https://www.saylaniwelfare.com/en" target="_blank">
               <div className="">
                 <Image
                   src="/saylani.png"
