@@ -52,7 +52,7 @@ export default function Navbar() {
     >
       <div className="flex flex-row-reverse justify-between px-4 md:flex-none md:px-0">
         <div className="flex flex-row-reverse md:flex-row mt-2 md:mt-0 items-center space-x-3 z-20">
-          <Link href="/">
+          <Link href="#">
             <div className="z-50 pl-3 md:pl-0 md:mt-10 ">
               <Image src="/piaic.svg" alt="logo" width="50" height="50"></Image>
             </div>
@@ -94,7 +94,7 @@ export default function Navbar() {
       >
         <li className="py-2 px-4 border-b bg-sky-900 border-b-amber-100 md:border-b-transparent md:bg-transparent">
           <Link
-            href="/"
+            href="#"
             className="group transition-all duration-300 ease-in-out"
           >
             <span className="md:bg-left-bottom md:bg-gradient-to-r from-slate-100 to-slate-100 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] transition-all duration-500 ease-out pb-2">
@@ -127,7 +127,7 @@ export default function Navbar() {
                 {data.map((item: { id: number; course: string }) => (
                   <ul key={item["id"]}>
                     <li className="py-2 px-4 border-b border-b-amber-100 md:bg-sky-900">
-                      <Link href="/"> {item.course}</Link>
+                      <Link href="#"> {item.course}</Link>
                     </li>
                   </ul>
                 ))}
@@ -137,7 +137,7 @@ export default function Navbar() {
         </li>
         <li className="py-2 px-4 border-b bg-sky-900 border-b-amber-100 md:border-b-transparent md:bg-transparent">
           <Link
-            href="/"
+            href="#"
             className="group transition-all duration-300 ease-in-out"
           >
             <span className="md:bg-left-bottom md:bg-gradient-to-r from-slate-100 to-slate-100 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] transition-all duration-500 ease-out pb-2">
@@ -147,7 +147,7 @@ export default function Navbar() {
         </li>
         <li className="py-2 px-4 border-b bg-sky-900 border-b-amber-100 md:border-b-transparent md:bg-transparent">
           <Link
-            href="/"
+            href="#"
             className="group transition-all duration-300 ease-in-out"
           >
             <span className="md:bg-left-bottom md:bg-gradient-to-r from-slate-100 to-slate-100 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] transition-all duration-500 ease-out pb-2">

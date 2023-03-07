@@ -17,7 +17,7 @@ export default function Footer() {
       <footer className="bg-black p-5 items-center flex flex-col md:flex-row mt-auto md:justify-evenly gap-6 md:px-16  ">
         <div id="logo_social" className="pt-2">
           <div className="flex items-center space-x-2">
-            <Link href="/">
+            <Link href="#">
               <div className="">
                 <Image
                   src="/piaic.svg"
@@ -67,16 +67,16 @@ export default function Footer() {
             <div className="font-bold text-lg text-blue-200">About Us</div>
             <ul className="text-sm mt-2 text-slate-300">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="#">Home</Link>
               </li>
               <li>
-                <Link href="/">Apply</Link>
+                <Link href="#">Apply</Link>
               </li>
               <li>
-                <Link href="/">How it works</Link>
+                <Link href="#">How it works</Link>
               </li>
               <li>
-                <Link href="/">Contact Us</Link>
+                <Link href="#">Contact Us</Link>
               </li>
             </ul>
           </div>

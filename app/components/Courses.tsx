@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Lato, Ubuntu } from "@next/font/google";
+import { Ubuntu } from "@next/font/google";
 import Card from "./Card";
 
 const ubuntu = Ubuntu({
